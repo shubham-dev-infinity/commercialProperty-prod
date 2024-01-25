@@ -24,8 +24,11 @@ $(document).ready(function() {
   });
 
   $(".custom-select-trigger").on("click", function (event) {
+      var isOpened = $(this).parents(".custom-select").hasClass("opened");
       $(".custom-select").removeClass("opened"); // Close all other selectors
-      $(this).parents(".custom-select").toggleClass("opened");
+      if (!isOpened) {
+          $(this).parents(".custom-select").addClass("opened");
+      }
       event.stopPropagation();
   });
 
@@ -41,6 +44,7 @@ $(document).ready(function() {
       $(".custom-select").removeClass("opened");
   });
 });
+
 
 
 //  ----------------------------------------------------------------------- GRAPH 1 ------------------------------------------------------------
