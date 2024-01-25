@@ -106,99 +106,122 @@
                 <div id="airbnb_Purchase_Model" class="calculator_Models show_Model">
                     <div class="buy_input_box">
                         <div class="row gy-1">
-                            <div class="col-12 col-md-3" id="submit-form">
-                                <div class="input-group column">
-                                    <label class="form-label property_Parameter_Lable" id="basic-addon1">STREET</label>
-                                    <div class="input-group column mb-2">
-                                        <input type="text" id="street_name"
-                                            class="form-control property_Details_Form_Field" placeholder="Street Name"
-                                            required>
-                                    </div>
+                            <div class="col-12 col-md-3">
+                                <label for="formGroupExampleInput"
+                                    class="form-label property_Parameter_Lable">STREET</label>
+                                <div class="input-group column mb-2" id="basic-addon1">
+                                    <input type="text" id="street_name" class="form-control property_Details_Form_Field"
+                                        placeholder="Street Address" required="">
                                 </div>
-
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <label for="formGroupExampleInput" class="form-label property_Parameter_Lable "
+                                    id="basic-addon1">SUBURB</label>
+                                <div class="input-group column mb-2">
+                                    <input type="text" id="subrub_name" class="form-control property_Details_Form_Field"
+                                        placeholder="Suburb Name" required="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <label for="formGroupExampleInput" class="form-label property_Parameter_Lable"
+                                    id="basic-addon1">City</label>
+                                <div class="input-group column mb-2">
+                                    <input type="text" id="city_name" class="form-control property_Details_Form_Field"
+                                        placeholder="City Name" required="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <label for="formGroupExampleInput" class="form-label property_Parameter_Lable"
+                                    id="basic-addon1">STATE</label>
                                 <div class="input-group column">
-                                    <label class="form-label property_Parameter_Lable" id="basic-addon1">TYPE</label>
-                                    <div class="input-group column">
-                                        <select id="type" class="property_Details_Form_Field" required>
-                                            <option value="Unit" selected>Unit</option>
-                                            <option value="Apartment">Apartment</option>
-                                            <option value="Villa">Villa</option>
-                                            <option value="Duplex">Duplex</option>
-                                            <option value="Townhouse">Townhouse</option>
-                                            <option value="House">House</option>
-                                        </select>
+
+
+                                    <div id="dropdown" class="w-100">
+                                        <div class="custom-select-wrapper"><select name="sources" id="sources"
+                                                class="custom-select sources" placeholder="State"
+                                                style="display: none;">
+                                                <option value="ACT">ACT</option>
+                                                <option value="NSW">NSW</option>
+                                                <option value="NT">NT</option>
+                                                <option value="QLD">QLD</option>
+                                                <option value="SA">SA</option>
+                                                <option value="TAS">TAS</option>
+                                                <option value="VIC">VIC</option>
+                                                <option value="WA">WA</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3" id="submit-form">
+                            <div class="col-12 col-md-3">
+                                <label for="formGroupExampleInput"
+                                    class="form-label property_Parameter_Lable">TYPE</label>
                                 <div class="input-group column">
-                                    <label class="form-label property_Parameter_Lable " id="basic-addon1">SUBURB</label>
-                                    <div class="input-group column mb-2">
-                                        <input type="text" id="subrub_name"
-                                            class="form-control property_Details_Form_Field" placeholder="Subrub Name"
-                                            required>
-                                    </div>
-
-                                </div>
-                                <div class="input-group column">
-                                    <label class="form-label property_Parameter_Lable " id="basic-addon1">Land
-                                        Area(sqm)</label>
-                                    <div class="input-group column mb-2">
-                                        <input type="text" id="land_area"
-                                            class="form-control property_Details_Form_Field"
-                                            placeholder="Land Area(sqm)" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3" id="submit-form">
-                                <div class="input-group column">
-                                    <label class="form-label property_Parameter_Lable " id="basic-addon1">City </label>
-                                    <div class="input-group column mb-2">
-                                        <input type="text" id="city_name"
-                                            class="form-control property_Details_Form_Field" placeholder="City Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="input-group column">
-                                    <label class="form-label property_Parameter_Lable " id="basic-addon1">Floor
-                                        Area(sqm)</label>
-
-                                    <div class="input-group column mb-2">
-                                        <input type="text" id="floor_area"
-                                            class="form-control property_Details_Form_Field"
-                                            placeholder="Floor Area(sqm)" required>
+                                    <div class="w-100">
+                                        <div class="custom-select-wrapper"><select name="sources" id="sources"
+                                                class="custom-select sources" placeholder="Property Type"
+                                                style="display: none;">
+                                                <option value="Unit">Unit</option>
+                                                <option value="Apartment">Apartment</option>
+                                                <option value="Villa">Villa</option>
+                                                <option value="Duplex">Duplex</option>
+                                                <option value="Townhouse">Townhouse</option>
+                                                <option value="House">House</option>
+                                            </select>
+                                        </div>
                                     </div>
 
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3" id="submit-form">
+                            <div class="col-12 col-md-3">
+                                <label for="formGroupExampleInput" class="form-label property_Parameter_Lable"
+                                    id="basic-addon1">BEDROOMS</label>
                                 <div class="input-group column">
-                                    <label class="form-label property_Parameter_Lable " id="basic-addon1">State</label>
-                                    <!-- <input type="text"  id="state_name" class="form-control" placeholder="State Name"  required> -->
-                                    <div class="input-group column mb-2">
-                                        <select id="state_name" class="property_Details_Form_Field" required>
-                                            <option value="ACT">ACT</option>
-                                            <option value="NSW" selected>NSW</option>
-                                            <option value="NT" selected>NT</option>
-                                            <option value="QLD">QLD</option>
-                                            <option value="SA">SA</option>
-                                            <option value="TAS">TAS</option>
-                                            <option value="VIC">VIC</option>
-                                            <option value="WA">WA</option>
-                                        </select>
+                                    <div class="w-100">
+                                        <div class="custom-select-wrapper"><select name="sources" id="sources"
+                                                class="custom-select sources" placeholder="Bedrooms"
+                                                style="display: none;">
+                                                <option value="1 Bedrooms">1 Bedrooms</option>
+                                                <option value="2 Bedrooms">2 Bedrooms</option>
+                                                <option value="3 Bedrooms">3 Bedrooms</option>
+                                                <option value="4+ Bedrooms">4+ Bedrooms</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <label for="formGroupExampleInput" class="form-label property_Parameter_Lable"
+                                    id="basic-addon1">BATHROOM</label>
                                 <div class="input-group column">
-                                    <label class="form-label property_Parameter_Lable "
-                                        id="basic-addon1">Parking</label>
-                                    <div class="input-group column mb-2">
-                                        <select id="parking" class="property_Details_Form_Field" required>
-                                            <option value="No Parking">No Parking</option>
-                                            <option value="Single Car Space" selected>Single Car Space</option>
-                                            <option value="Double Car Space" selected>Double Car Space</option>
-                                            <option value="Single Garage">Single Garage</option>
-                                            <option value="Double Garage">Double Garage</option>
-                                        </select>
+                                    <div class="w-100">
+                                        <div class="custom-select-wrapper">
+                                            <select name="sources" id="sources" class="custom-select sources"
+                                                placeholder="Bathroom" style="display: none;">
+                                                <option value="1 Bathroom">1 Bathroom</option>
+                                                <option value="2 Bathrooms">2 Bathrooms</option>
+                                                <option value="3 Bathrooms">3 Bathrooms</option>
+                                                <option value="4+ Bathrooms">4+ Bathrooms</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <label for="formGroupExampleInput" class="form-label property_Parameter_Lable"
+                                    id="basic-addon1">PARKING</label>
+                                <div class="input-group column">
+                                    <div class="w-100" id="dropdown">
+                                        <div class="custom-select-wrapper">
+                                            <select name="sources" id="sources" class="custom-select sources"
+                                                placeholder="Parking" style="display: none;">
+                                                <option value="noparking">No Parking</option>
+                                                <option value="singlecarspace">Single Car Space</option>
+                                                <option value="doublecarspace">Double Car Space</option>
+                                                <option value="singlegarage">Single Garage</option>
+                                                <option value="doublegarage">Double Garage</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -317,7 +340,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="result-message"></div>
+                                    <div id="result-message" style="font-weight: bold; text-transform: uppercase;">
+                                        Purchasing at Market Price</div>
+                                    <!-- <div id="result-message"></div> -->
                                 </div>
                             </div>
                             <div class="property_price">
@@ -461,18 +486,24 @@
                                                 <input type="text" class="amountInput property_inner_input"
                                                     id="maintenance_amount" placeholder="" />
                                             </div>
-                                            <div class="form-group property_input" style="display:flex">
-                                                <label class="purchase_label" for="management_fees"> Property Management
-                                                    Fees </label>
-                                                <div class="percentage_Wrapper">
-                                                    <input type="text" id="management_fees_amount"
-                                                        class="form-control property_inner_input amountPercentage"
-                                                        placeholder="0"
-                                                        style="width: 130px;margin-left: 10px;padding-right: 20px;" />
-                                                    <label for="management_fees_amount"
-                                                        class="percentage_Symbole">%</label>
+                                            <div class="property_input">
+                                                <div style="flex: 1;">
+                                                    <label for="management_fees" class="purchase_label">Property
+                                                        Management
+                                                        Fees</label>
                                                 </div>
-                                                <span id="management_fees" style="margin-right: 12px;"></span>
+                                                <div class="input-icon input-icon-right"
+                                                    style="display: flex; gap: 6px; align-items: center; flex: 1; justify-content: space-between;">
+                                                    <div class="percentage_Wrapper">
+                                                        <input type="text" id="management_fees_amount"
+                                                            class="form-control property_inner_input amountPercentage"
+                                                            style="width: 130px;margin-left: 10px;padding-right: 20px;">
+                                                        <label for="management_fees_amount" class="percentage_Symbole">%
+                                                        </label>
+                                                    </div>
+
+                                                    <span id="management_fees" style="margin-right: 12px;">$0</span>
+                                                </div>
                                             </div>
 
                                         </fieldset>
@@ -502,8 +533,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group total_loan">
-                                        <p class="fund-borrowed annual_text"> Total Funds Borrowed </p>
-                                        <div class="end annual_text fund-borrowed-amount" id="fund-borrowed-amount">$0
+                                        <p class="fund-borrowed purchase_label"> Total Funds Borrowed </p>
+                                        <div class="end purchase_label fund-borrowed-amount" id="fund-borrowed-amount">
+                                            $0
                                         </div>
                                     </div>
 
@@ -512,32 +544,32 @@
                                 <div class="principal-interest loan_expenses">
                                     <p class="d_text">PRINCIPAL & INTEREST (P&I)</p>
                                     <div class="form-group property_input">
-                                        <label class="loan-term annual_text"> Loan Term (years) </label>
+                                        <label class="loan-term purchase_label"> Loan Term (years) </label>
                                         <input type="text" class="property_inner_input" id="loan-term"
                                             placeholder="0" />
                                     </div>
                                     <div class="expenses_loan_text">
-                                        <p class="monthly-repayment annual_text"> Monthly Repayments </p>
-                                        <div class="end annual_text monthly-repayment-amount"
+                                        <p class="monthly-repayment purchase_label"> Monthly Repayments </p>
+                                        <div class="end purchase_label monthly-repayment-amount"
                                             id="monthly-repayment-amount">$0</div>
                                     </div>
                                     <div class="expenses_loan_text">
-                                        <p class="annual-repayment annual_text"> Annual Repayments </p>
-                                        <div class="end annual_text annual-repayment-amount"
+                                        <p class="annual-repayment purchase_label"> Annual Repayments </p>
+                                        <div class="end purchase_label annual-repayment-amount"
                                             id="annual-repayment-amount">$0</div>
                                     </div>
                                 </div>
                                 <div class="loan_expenses">
                                     <p class="d_text">INTEREST ONLY (I/O)</p>
                                     <div class="expenses_loan_text">
-                                        <p class="annual-repayment annual_text"> Annual Repayments </p>
-                                        <div class="end annual_text annual-repayment-amount"
+                                        <p class="annual-repayment purchase_label"> Annual Repayments </p>
+                                        <div class="end purchase_label annual-repayment-amount"
                                             id="interest_annual_repayment_amount">$0</div>
 
                                     </div>
                                     <div class="expenses_loan_text">
-                                        <p class="lvr annual_text"> LVR </p>
-                                        <div class="end annual_text lvr-amount" id="lvr_amount">0%</div>
+                                        <p class="lvr purchase_label"> LVR </p>
+                                        <div class="end purchase_label lvr-amount" id="lvr_amount">0%</div>
                                     </div>
                                 </div>
                             </div>
@@ -604,7 +636,7 @@
                                                 <label class="purchase_label" for="lease-expiry">Lease Expiry</label>
                                                 <input type="date" id="lease-expiry" placeholder=""
                                                     class="date-input lease-expiry property_inner_input"
-                                                    style="width:160px" value="" min="1997-01-01" max="2040-12-31">
+                                                    style="width: 209px;" value="" min="1997-01-01" max="2040-12-31">
                                             </div>
 
                                             <div class="form-group property_input">
@@ -685,35 +717,38 @@
 
                                     <picture class="d_text">YIELD (ANNUAL)</picture>
                                     <div class="form-group expenses_loan_text">
-                                        <label class="annual-repayment annual_text"> Net Yield</label>
-                                        <label class="annual-repayment-amount annual_text"
+                                        <label class="annual-repayment purchase_label"> Net Yield</label>
+                                        <label class="annual-repayment-amount purchase_label"
                                             id="asPurchased-grossYield">0%</label>
                                     </div>
                                     <div class="form-group expenses_loan_text">
-                                        <label class="annual-repayment annual_text"> Cash on Cash Yield
+                                        <label class="annual-repayment purchase_label"> Cash on Cash Yield
                                             (P&amp;I)</label>
-                                        <label class="annual-repayment-amount annual_text"
+                                        <label class="annual-repayment-amount purchase_label"
                                             id="asPurchased-cashYield-pi">0%</label>
                                     </div>
                                     <div class="form-group expenses_loan_text">
-                                        <label class="annual-repayment annual_text"> Cash on Cash Yield (I/O)</label>
-                                        <label class="annual-repayment-amount annual_text"
+                                        <label class="annual-repayment purchase_label"> Cash on Cash Yield (I/O)</label>
+                                        <label class="annual-repayment-amount purchase_label"
                                             id="asPurchased-cashYield-io">0%</label>
                                     </div>
                                 </div>
                                 <div class="profit_box">
                                     <p class="d_text">RETURN ON EQUITY</p>
                                     <div class="form-group expenses_loan_text">
-                                        <label class="annual-repayment annual_text">@ 5% Growth Rate</label>
-                                        <label class="annual-repayment-amount annual_text" id="growthRate_5">0%</label>
+                                        <label class="annual-repayment purchase_label">@ 5% Growth Rate</label>
+                                        <label class="annual-repayment-amount purchase_label"
+                                            id="growthRate_5">0%</label>
                                     </div>
                                     <div class="form-group expenses_loan_text">
-                                        <label class="annual-repayment annual_text">@ 7% Growth Rate</label>
-                                        <label class="annual-repayment-amount annual_text" id="growthRate_7">0%</label>
+                                        <label class="annual-repayment purchase_label">@ 7% Growth Rate</label>
+                                        <label class="annual-repayment-amount purchase_label"
+                                            id="growthRate_7">0%</label>
                                     </div>
                                     <div class="form-group expenses_loan_text">
-                                        <label class="annual-repayment annual_text"> @ 10% Growth Rate</label>
-                                        <label class="annual-repayment-amount annual_text" id="growthRate_10">0%</label>
+                                        <label class="annual-repayment purchase_label"> @ 10% Growth Rate</label>
+                                        <label class="annual-repayment-amount purchase_label"
+                                            id="growthRate_10">0%</label>
                                     </div>
                                 </div>
                                 <div class="net-profit total-expenses-amount net_profit" style="margin-top:20px">
@@ -739,6 +774,7 @@
                 <div id="garph_data_two" style="width: 100%; height: 400px; margin: 0 auto"></div>
             </div>
         </div>
+        
     </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

@@ -877,3 +877,26 @@ $(document).ready(function () {
     // addTenancyCard();
 
 });
+
+$('#nav_Bars').click(function () {
+    $('body').css('overflow', 'hidden');
+    $('#sidebar-container').addClass('give_Full_Width');
+    $('#layoutSidenav_nav').addClass('give_Width_350');
+})
+$('#close_Nav_Button').click(function () {
+    $('body').css('overflow', 'auto');
+    $('#sidebar-container').removeClass('give_Full_Width');
+    $('#layoutSidenav_nav').removeClass('give_Width_350');
+})
+var currentUrl = window.location.href;
+
+// Iterate through each link and compare its href with the current URL
+$('#layoutSidenav_nav a').each(function () {
+    var linkUrl = $(this).attr('href');
+
+    // Check if the link's href matches the current URL
+    if (currentUrl.indexOf(linkUrl) !== -1) {
+        // Add the "activeLink" class to the matching link
+        $(this).addClass('activeLink');
+    }
+});
